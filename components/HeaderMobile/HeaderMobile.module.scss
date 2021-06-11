@@ -1,0 +1,36 @@
+
+.nav {
+    width: 100%;
+    background-color: #FD619C;
+    padding: 32px;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    ul {
+        margin: 0 auto;
+        padding: 0;
+
+        list-style: none;
+        display: flex;
+        max-width: 900px;
+        justify-content: space-around;
+        a {
+            color: #fff;
+            border-radius: 4px;
+            padding: 12px 24px;
+            &:hover {
+                background-color: #fff;
+                color: #FD619C;
+            }
+        }
+       
+    }
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+}
+.active {
+    background-color: #fff;
+    color: #FD619C !important;
+}
